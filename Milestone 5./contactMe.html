@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Yates: Contact Me</title>
+    <link rel="stylesheet" href="myStyles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lacquer&display=swap');
+        </style>
+</head>
+<body>
+    <div style="text-align: center;">
+      <!-- Navigation links -->
+      <h1 style="font-family: Comic Sans MS; font-size: 28px; padding: 10px; border: 4px solid green; display: inline-block; background-color: rgb(178, 177, 177);">
+        <a href="index.html" style="text-decoration: none; color: inherit;">Home Page</a> • 
+    <a href="aboutMe.html" style="text-decoration: none; color: inherit;">About Me</a> • 
+    <a href="portfolio.html" style="text-decoration: none; color: inherit;">Portfolio</a> • <a href="Resume.html" style="text-decoration: none; color: inherit;">Resume</a> • <a href="contactMe.html" style="text-decoration: none; color: inherit;">Contact Me</a> • Lifestyle
+    </h1>
+    <h2 style="font-family: lacquer; font-size: 32px;">Want to Learn More?<br> I can help with a variety of projects! Contact me below for help with: </h2>
+    <ul style="font-family: lacquer; font-size: 32px;">
+        <li>Telecommunications Consulting</li>
+        <li>Customer Support Services Consulting</li>
+        <li>Inventory Management Development</li>
+        <li>FullStack Website Development</li>
+    </ul>
+    <h3 style="font-family: Comic Sans MS; font-size: 32px; color: darkcyan;">
+        Contact Me:
+    </h3>
+    <p style="font-family: Comic Sans MS; font-size: 32px; color: black;">
+    <a href="https://www.linkedin.com/in/jeremy-yates-8b4344138/" style="text-decoration: none; color: inherit;">Click for my LinkedIn</a>
+    <br>Submit an Email form below: 
+    </p>
+    <form action="process_form.php" method="post" style="font-family: Comic Sans MS; font-size: 32px; text-align: center; color: brown;">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email Address:</label>
+        <br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="description">Description of Project:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer style="background-color: rgb(178, 177, 177); padding: 1px 0; position: fixed; bottom: 0; 
+    left: 0; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 10px; justify-content: space-between; 
+        align-items: center; background-color: rgb(178, 177, 177); padding: 1px; text-align:center;">
+        <p style="color: green; margin: 0;">2023 Jeremy Yates: Webpage. All rights reserved</p>
+    </div>
+</footer>
+<script src="inputFocusBlur.js"></script>
+    <script>
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const descriptionInput = document.getElementById("description");
+
+        addFocusBlurListeners(nameInput);
+        addFocusBlurListeners(emailInput);
+        addFocusBlurListeners(descriptionInput);
+    </script>
+</body>
+</html>

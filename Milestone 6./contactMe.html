@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Yates: Contact Me</title>
+    <link rel="stylesheet" href="myStyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lacquer&display=swap');
+        </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jeremy Yates: FullStack Software Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactMe.html">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lifestyle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 style="font-family: Comic Sans MS; font-size: 32px;">Want to Learn More?<br> I can help with a variety of projects! Contact me below for help with: </h2>
+    <p style="text-align: center; font-family: Comic Sans MS; font-size: 32px;">
+        Telecommunications Consulting <br>
+        Customer Support Services Consulting <br>
+        Inventory Management Development <br>
+        FullStack Website Development <br>
+    </p>
+    <h3 style="font-family: Comic Sans MS; font-size: 32px; color: black;">
+        Contact Me:
+    </h3>
+    <p style="font-family: Comic Sans MS; font-size: 32px; color: black;">
+        <button class="btn btn-primary" onclick="window.location.href='https://www.linkedin.com/in/jeremy-yates-8b4344138/'">LinkedIn Profile</button>
+        <br>
+        <br>Submit an Email form below: 
+    </p>
+    <br>
+    <form action="process_form.php" method="post" style="font-family: Comic Sans MS; font-size: 32px; text-align: center; color: rgb(245, 9, 9);">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email Address:</label>
+        <br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="description">Description of Project:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+        <br> <br>
+    </form>
+
+    <footer style="background-color: rgb(178, 177, 177); padding: 1px 0; position: fixed; bottom: 0; 
+    left: 0; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 10px; justify-content: space-between; 
+        align-items: center; background-color: rgb(178, 177, 177); padding: 1px; text-align:center;">
+        <p style="color: green; margin: 0;">2023 Jeremy Yates: Webpage. All rights reserved</p>
+    </div>
+</footer>
+<script src="inputFocusBlur.js"></script>
+    <script>
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const descriptionInput = document.getElementById("description");
+
+        addFocusBlurListeners(nameInput);
+        addFocusBlurListeners(emailInput);
+        addFocusBlurListeners(descriptionInput);
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>    
+</body>
+</html>
